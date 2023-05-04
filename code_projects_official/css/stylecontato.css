@@ -1,0 +1,97 @@
+.participantes {
+  text-align: center;
+  color: #162938;
+}
+
+.participantes h3 {
+  font-size: 1.8em;
+  margin-bottom: 12px;
+}
+
+.participantes p {
+  margin-bottom: 20px;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+}
+
+.participantes .card-item {
+  margin: 15px;
+  width: 350px;
+  height: 350px;
+  background-color: #b5c9e5;
+  border-radius: 15px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.participantes .card-item:hover {
+  background-color: #80a0c4;
+  margin-top: 8px;
+  transition: 0.3s;
+}
+.participantes .card-item:hover .name-user,
+.participantes .card-item:hover .conteudo-user {
+  color: #0c0026;
+}
+
+/* imagens dentro dos card-item */
+.card-item img {
+  display: block;
+  margin: 10px auto;
+  width: 180px;
+  height: 160px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+/* nomes dos participantes */
+.card-item .name-user {
+  margin-top: 13px;
+  font-size: 18px;
+  border-top: 2px solid rgba(0, 33, 103, 0.4);
+  border-bottom: 2px solid rgba(0, 33, 103, 0.4);
+  border-radius: 60px;
+  transition: 0.3s;
+}
+
+/* texto dentro do card-item */
+.card-item .conteudo-user {
+  font-size: 1em;
+  padding: 0 15px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  transition: 0.3s;
+}
+
+.card-item ul li {
+  display: inline;
+  margin-top: 10px;
+  font-weight: 450;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.cards .card-item ul li a, ion-icon {
+  color: #340081;
+}
+
+.card-item ul li a:hover {
+  color: #810063;
+}
+/* end - texto dentro do card-item */
+
+
+@media (max-width:770px) {
+  .participantes .card-item {
+
+  }
+}

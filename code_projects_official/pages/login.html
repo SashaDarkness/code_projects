@@ -1,0 +1,150 @@
+<!doctype html>
+<html class="no-js" lang="PT-BR">
+
+<head>
+  <meta charset="utf-8">
+  <title>LOGIN</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="10">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta name="theme-color" content="#fafafa">
+
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="apple-touch-icon" href="../icon.png">
+
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/stylelogin.css">
+
+</head>
+<body >
+<!-- header -->
+<header id="header-banner">
+  <div class="container">
+    <!-- nav menu-->
+    <nav>
+      <div class="logo">
+        <a href="#">Code Projects</a>
+      </div>
+      <ul>
+        <li><a href="../pages/index.html"><i class="fa fa-fw fa-home"></i> Home </a></li>
+        <li><a href="../pages/sobre.html"> Sobre </a></li>
+        <li><a href="../pages/contato.html"><i class="fa fa-fw fa-envelope"></i> Contato </a></li>
+        <a href="../pages/login.html" class="button animate-btn">
+          <i class="fa fa-user-circle"> Login </i></button>
+        </a>
+      </ul>
+      <div class="menu-icon">
+        <img src="../img/menu.png" class="icon-tam"/>
+      </div>
+    </nav>
+    <!-- end nav menu-->
+    <!-- BANNER -->
+    <section class="banner">
+      <div class="banner-text">
+        <h3>Code Project</h3>
+        <p>Aprendendo JavaScrip de uma forma prática</p>
+      </div>
+    </section>
+    <!--END BANNER-->
+  </div>
+</header>
+<!-- end header -->
+<section>
+
+  <!--  -->
+  <div class="main-wrapper">
+    <h1> Sejam Bem Vindos ao Code Projects. </h1>
+    <div class="wrapper">
+      <form class="form-box login" action="#" onsubmit={} id="form">
+        <!--         <span class="icon-close">-->
+        <!--            <ion-icon name="close"></ion-icon>-->
+        <!--         </span>-->
+        <h2> Login </h2>
+        <div class="input-box">
+          <label for="email"> Email: </label>
+          <span class="icon">
+              <ion-icon name="mail"></ion-icon>
+            </span>
+          <input id="email" type="email" name="email" placeholder="email" required/>
+        </div>
+        <div class="input-box">
+          <label for="senha"> Senha: </label>
+          <span class="icon">
+              <ion-icon name="lock-closed"></ion-icon>
+            </span>
+          <input id="senha" type="password" name="senha" placeholder="senha" required/>
+        </div>
+        <div class="remember-forgot">
+          <label><input type="checkbox"/> Lembre-me</label>
+          <a href="#">Esqueceu a senha?</a>
+        </div>
+        <button class="btn login" type="submit" onclick="logar()"> Login </button>
+        <div class="login-register">
+          <p> Não possuir uma conta?&ensp;<a href="#" class="register-link">Registre-se aqui!</a></p>
+        </div>
+      </form>
+
+      <form class="form-box register" action="#">
+        <h2> Cadastre-se </h2>
+        <div class="input-box">
+          <label for="username"> Nome: </label>
+          <span class="icon">
+               <ion-icon name="person"></ion-icon>
+            </span>
+          <input id="username" type="text" name="username" placeholder="username" required/>
+        </div>
+        <div class="input-box">
+          <label for="mail"> Email: </label>
+          <span class="icon">
+               <ion-icon name="mail"></ion-icon>
+            </span>
+          <input id="mail" type="email" name="email" placeholder="email" required/>
+        </div>
+        <div class="input-box">
+          <label for="password"> Senha: </label>
+          <span class="icon">
+               <ion-icon name="lock-closed"></ion-icon>
+            </span>
+          <input id="password" type="password" name="password" placeholder="senha" required/>
+        </div>
+        <div class="remember-terms">
+          <label><input type="checkbox"/> Eu aceito o termo & condições</label>
+        </div>
+        <button class="btn register" type="submit"> Cadastrar </button>
+        <div class="login-register">
+          <p> Já possuir uma conta? <a href="#" class="login-link">Entre aqui!</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script src="../js/script-login.js"></script>
+
+<!-- scripts do import icons-->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+<script src="../js/script-menu.js"></script>
+<script src="../js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="../js/plugins.js"></script>
+<script src="../js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
